@@ -1,9 +1,12 @@
 .react-form-builder {
   .react-form-builder-preview {
+
     // position: relative;
     // width: 70%;
     border: 1px solid #ddd;
-    background: #fafafa;
+    background: #1C6EA4;
+    max-height: 80vh;
+    overflow: scroll;
     padding: 10px;
     box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
     min-height: 750px;
@@ -101,6 +104,7 @@
         }
       }
       .dynamic-option-list {
+      
         margin-bottom: 15px;
         ul {
           list-style-type: none;
@@ -176,13 +180,15 @@
         &.is-placeholder {
           display: block;
           z-index: auto;
-          opacity: .4;
+          opacity: 0.4;
           border: 2px #ccc dashed;
+      
         }
         .toolbar-header {
           opacity: 0; // visible
           z-index: 100;
           position: relative;
+          color: red;
           .label {
             position: absolute;
             left: 20px;
@@ -190,6 +196,7 @@
           .toolbar-header-buttons {
             position: absolute;
             right: 20px;
+            
             margin-top:-20px;
           }
         }
@@ -222,10 +229,14 @@
     }
   }
 
-  .react-form-builder-toolbar {
+  .react-form-builder-toolbar 
+  {
+    max-height: 100vh;
+    overflow: auto;
     width: 100%;
-    background: #fff;
-    margin-top: -30px;
+    background: #2e2e2d;
+    margin-top: -50px;
+    color: white;
 
     h4 {
       margin-top: 0;
@@ -240,8 +251,8 @@
       li {
         cursor: pointer;
         list-style: none;
-        margin: 5px;
-        padding: 10px;
+        margin: 2px;
+        padding: 5px;
         border: 1px dashed #ddd;
         i {
           margin: 0 15px 0 10px;
